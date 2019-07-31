@@ -1,0 +1,36 @@
+{% extends 'base.html' %} {% block content %}
+{% for saraSweets in company %} {% if loop.index % 2 != 0 %}
+<div>
+    <div class="saraImg">
+        <a href="/about/{{ saraSweets.url }}">
+            <img class="featurette-image img-responsive" src=" {{ saraSweets.image_source }}" alt="Picture of {{ saraSweets.name }}"></img>
+        </a>
+    </div>
+</div>
+{% endif %} {% endfor %}
+<h2>{{ page_title }}</h2>
+<p>
+    Sara Sweets is making cakes and cupcakes since 2015 when I discovered my passion for Bakery.
+</p>
+<p>
+    At the beginning I baked my cakes and cupcakes for friends and family events, they suggested me to sell my sweets but I wasn't too sure if it would work for me to spend that time, money and effort without big clients, neither website nor local-based.
+    But, my friends and family were extended mouth by mouth how good my sweets were and step by step I was increasing the orders and clients.
+</p>
+<p>
+    Slowly, slowly I was improving my skills on bakery and the challenges become easier, especially with the fancy cakes, and colorful cupcakes and I was so proud how my sweets looked like the more professional finish.
+</p>
+<p>
+    I would like to share with you how I met my main client:</br>
+    One day, my parents and I decided to explore alittle bit more the city I used to live, and we stopped in a coffee shop to treat ourselves. They asked for a coffee and juice, and I asked for a tea and a piece of cake. When we finished and we were going
+    to pay, the owner of the coffee shop asked me for my honest feedback about the cake. That piece of cake wasn't the best I tried in my short life. I told him that "If someone how knows a little bit about cakes try that one, it would tell him was really
+    bad".
+    </br>
+    After this he asked me if I was a professional bakery and I told him "I'll bring some examples in a couple of days and you just need to give as complementary for getting some feedback, once you finish all of them call me and let me know the feedback and
+    what you think about it".</br>
+    One week after I had his first order and every week after this I was baking for him 4 big cakes per week for selling on his coffee shop even his clients were ordering cakes for their special occasions and the dream becomes true.
+</p>
+<p>
+    <h4>I was running my own bakery company!</h4>
+</p>
+
+{% endblock %}
